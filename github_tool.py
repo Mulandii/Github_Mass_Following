@@ -557,7 +557,7 @@ class GitHubTool:
             return None
     
     # NEW FUNCTIONALITY: Seed User Follower Extractor
-    def get_followers_for_user(self, username: str, max_followers: int = 1000) -> List[str]:
+    def get_followers_for_user(self, username: str, max_followers: int = 2500) -> List[str]:
         """Get all followers of a specific user"""
         try:
             self.print_info(f"Fetching followers for @{username}...")
